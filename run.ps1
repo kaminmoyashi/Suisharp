@@ -20,5 +20,17 @@ $demo = $demoDirectory
 & $dotnet restore $project --configfile $config --disable-parallel
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-& $dotnet run --no-restore --project $demo -- --urls 'http://127.0.0.1:5080'
+Write-Host ''
+Write-Host 'Suisharp Demo のアクセス先: http://127.0.0.1:5080' -ForegroundColor Cyan
+Write-Host '起動完了後、ブラウザーで開いてください。終了するには Ctrl+C を押します。'
+Write-Host ''
+
+$demoUrl = 'http://127.0.0.1:5080'
+& $dotnet run --no-restore --project $demo -- --urls $demoUrl 2>&1 | ForEach-Object {
+    $line = "$_"
+    Write-Host $line
+    if ($line -match 'Now listening on:\s+(https?://\S+)') {
+        Write-Host "`nSuisharp Demo is ready. Open: $($Matches[1])`n" -ForegroundColor Green
+    }
+}
 exit $LASTEXITCODE
