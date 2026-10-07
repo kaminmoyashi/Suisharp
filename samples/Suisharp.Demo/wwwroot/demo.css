@@ -1,0 +1,19 @@
+.demo-screen {
+  max-width: 960px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.demo-component-frame {
+  box-sizing: border-box;
+  width: min(100%, 920px);
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid #c6dfed;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 78%);
+  box-shadow: 0 8px 24px rgb(42 103 140 / 10%);
+}

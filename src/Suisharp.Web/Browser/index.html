@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Application</title>
+  <style>
+    body { margin: 8px; }
+    body:has(#suisharp-root > .suisharp-component[style*="--suisharp-page-background"]) { background-color: #d9edf9; }
+    .suisharp-component {
+      width: 100%;
+      max-width: var(--suisharp-component-max-width, none);
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: var(--suisharp-component-padding, 0);
+      border: var(--suisharp-component-border, none);
+      border-radius: var(--suisharp-component-radius, 0);
+      background-color: var(--suisharp-component-background, transparent);
+      box-shadow: var(--suisharp-component-shadow, none);
+    }
+    .suisharp-button, .suisharp-textbox {
+      background-color: var(--suisharp-control-background, revert);
+      color: var(--suisharp-foreground, revert);
+      border: var(--suisharp-control-border, revert);
+      border-radius: var(--suisharp-control-radius, revert);
+      padding: var(--suisharp-control-padding, revert);
+      font: var(--suisharp-control-font, revert);
+      box-shadow: var(--suisharp-control-shadow, revert);
+      transition: var(--suisharp-control-transition, none);
+    }
+    .suisharp-textbox { width: var(--suisharp-textbox-width, revert); box-sizing: border-box; }
+    .suisharp-button { cursor: var(--suisharp-button-cursor, revert); }
+    .suisharp-button:hover {
+      background-color: var(--suisharp-control-hover, revert);
+      box-shadow: var(--suisharp-control-hover-shadow, revert);
+      transform: var(--suisharp-button-hover-transform, none);
+    }
+    .suisharp-button:focus-visible, .suisharp-textbox:focus-visible {
+      outline: var(--suisharp-control-focus, revert);
+      outline-offset: var(--suisharp-control-focus-offset, revert);
+    }
+  </style>
+  <script src="/suisharp.js" type="module"></script>
+</head>
+<body>
+  <p id="connection" role="status" hidden></p>
+  <main id="suisharp-root"></main>
+</body>
+</html>

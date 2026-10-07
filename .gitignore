@@ -1,0 +1,69 @@
+# .NET build outputs
+**/bin/
+**/obj/
+TestResults/
+**/TestResults/
+coverage/
+coverage.*
+*.coverage
+*.trx
+
+# IDE state
+.vs/
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Local build, package, and tool output
+/artifacts/
+/packages/
+*.nupkg
+*.snupkg
+/.dotnet-tools/
+/.local-tools/
+/.dotnet/
+/.nuget/
+/.config/dotnet-tools.json
+/tool-install/
+/work/
+
+# Suisharp CLI temporary project/cache if TMP/TEMP points into this repository
+/suisharp/
+/.tmp/suisharp/
+/tmp/suisharp/
+/temp/suisharp/
+/.suisharp/
+
+# Logs and local configuration
+logs/
+*.log
+.env
+.env.*
+!.env.example
+secrets.json
+**/secrets.json
+secrets.*
+**/secrets.*
+secrets/
+credentials/
+**/credentials/
+credentials.*
+**/credentials.*
+appsettings.Development.json
+appsettings.Local.json
+*.publishsettings
+*.credentials
+
+# Private keys and certificates
+*.pfx
+*.p12
+*.key
+*.pem
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>suisharp</ToolCommandName>
+    <PackageId>Suisharp.Cli</PackageId>
+    <Version>0.1.0</Version>
+    <Description>Run a single C# source file as a Suisharp web app.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Suisharp.Web/Suisharp.Web.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="src/Suisharp.Core/Suisharp.Core.csproj" />
+  <Project Path="src/Suisharp.Web/Suisharp.Web.csproj" />
+  <Project Path="src/Suisharp.Cli/Suisharp.Cli.csproj" />
+  <Project Path="samples/Suisharp.Demo/Suisharp.Demo.csproj" />
+  <Project Path="tests/Suisharp.Tests/Suisharp.Tests.csproj" />
+</Solution>
